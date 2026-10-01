@@ -1,10 +1,191 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>YouTube Dance Practice</title>
-<style>body{font-family:system-ui,sans-serif;max-width:720px;margin:40px auto;padding:0 16px;line-height:1.6;color:#111}</style>
-</head><body>
-<h1>YouTube Dance Practice</h1>
-<p>A Chrome extension to loop, slow down, mirror and record yourself on any YouTube video — built for practicing dance.</p>
-<p>7-day free trial, then US$2.99 once for lifetime access.</p>
-<p><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms & Refund Policy</a> · <a href="mailto:amztb12602@gmail.com">Contact</a></p>
-</body></html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YouTube Dance Practice — loop, slow, mirror, compare</title>
+<meta name="description" content="A Chrome extension for learning choreography from YouTube: A/B loop the hard part, slow it to 0.25×, mirror it, record yourself and compare loop by loop. 7 days free, then US$2.99 once.">
+<meta property="og:title" content="YouTube Dance Practice">
+<meta property="og:description" content="Loop it. Slow it. Mirror it. Film yourself and compare. A Chrome extension for learning choreo from YouTube.">
+<meta name="theme-color" content="#f8f6ec">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="shell nav__inner">
+    <a class="wordmark" href="./" aria-label="YouTube Dance Practice home">
+      <span class="wordmark__mark" aria-hidden="true"></span>
+      <span class="wordmark__full">YouTube Dance Practice</span>
+      <span class="wordmark__short">Dance Practice</span>
+    </a>
+    <nav class="nav__links" aria-label="Main">
+      <a class="nav__link" href="#how">How it works</a>
+      <a class="nav__link" href="#pricing">Pricing</a>
+      <a class="btn btn--sm js-burst" href="https://chromewebstore.google.com/detail/enepmjpmphiopfeafalokkmohmifldfp" target="_blank" rel="noopener">Add to Chrome</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="shell hero__grid">
+      <div>
+        <p class="mono hero__kicker">Chrome extension · for YouTube dance covers</p>
+        <h1>Learn the choreo, <span class="loopword">eight counts</span> at a time.</h1>
+        <p class="hero__lede">Loop the part you keep missing, slow it down, flip it to mirror. Then film yourself and check every rep against the video. All on YouTube.</p>
+        <div class="hero__actions">
+          <a class="btn btn--lg js-burst" href="https://chromewebstore.google.com/detail/enepmjpmphiopfeafalokkmohmifldfp" target="_blank" rel="noopener">Add to Chrome <span class="btn__arrow" aria-hidden="true">→</span></a>
+          <a class="btn btn--soft" href="#how">See how it works</a>
+        </div>
+        <p class="mono hero__fine">7 days free · then US$2.99 once · no subscription</p>
+      </div>
+
+      <figure class="practice" aria-label="Illustration: the practice timeline with an A–B loop over counts five to eight, at half speed and mirrored">
+        <div class="practice__stage">
+          <div class="practice__chips" aria-hidden="true">
+            <span class="chip"><span class="chip__dot"></span>Loop 2 / 3</span>
+            <span class="chip">0.5× · Mirror</span>
+          </div>
+          <div class="practice__counts" aria-hidden="true">
+            <span class="count">1</span><span class="count">2</span><span class="count">3</span><span class="count">4</span>
+            <span class="count count--loop">5</span><span class="count count--now">6</span><span class="count count--loop">7</span><span class="count count--loop">8</span>
+          </div>
+          <span class="practice__label" aria-hidden="true">chorus · the hard part</span>
+        </div>
+        <div class="timeline" aria-hidden="true">
+          <div class="timeline__track">
+            <span class="timeline__loop"></span>
+            <span class="timeline__marker timeline__marker--a"></span>
+            <span class="timeline__marker timeline__marker--b"></span>
+            <span class="playhead"></span>
+          </div>
+          <div class="timeline__times"><span><b>A</b> 1:12.4</span><span>repeat ×3</span><span><b>B</b> 1:19.8</span></div>
+        </div>
+      </figure>
+    </div>
+  </section>
+
+  <section id="how" class="band band--paper2">
+    <div class="shell">
+      <div class="section-head reveal">
+        <h2>One practice session, five moves.</h2>
+        <p>It sits on top of the YouTube player you already use. Nothing to upload, no new app to learn.</p>
+      </div>
+
+      <ol class="steps">
+        <li class="step step--coral">
+          <div class="step__num" aria-hidden="true">1.0<small>Loop</small></div>
+          <div class="step__body">
+            <h3>Loop the hard part.</h3>
+            <p>Drag A and B onto the timeline and pick how many repeats you want. Tag moments as you go. YouTube chapters show up as tags automatically.</p>
+          </div>
+          <div class="step__art" aria-hidden="true">
+            <div class="mini">
+              <div class="mini-loop"></div>
+              <div class="mini-loop__x"><span class="chip">A 1:12</span><span class="chip">×3</span><span class="chip">B 1:19</span></div>
+            </div>
+          </div>
+        </li>
+
+        <li class="step step--pear">
+          <div class="step__num" aria-hidden="true">2.0<small>Slow</small></div>
+          <div class="step__body">
+            <h3>Slow it right down.</h3>
+            <p>Anywhere from 0.25× to 2×, without leaving the video. Learn it slow, then step the speed back up a notch at a time.</p>
+          </div>
+          <div class="step__art" aria-hidden="true">
+            <div class="speed"><span>0.25×</span><span class="is-on">0.5×</span><span>0.75×</span><span>1×</span></div>
+          </div>
+        </li>
+
+        <li class="step step--cyan">
+          <div class="step__num" aria-hidden="true">3.0<small>Mirror</small></div>
+          <div class="step__body">
+            <h3>Flip it to mirror.</h3>
+            <p>Face the screen and move the same way as the dancer. One tap flips only the video, not the player controls.</p>
+          </div>
+          <div class="step__art" aria-hidden="true">
+            <div class="mirror"><span>LEFT</span><i>⇋</i><span>LEFT</span></div>
+          </div>
+        </li>
+
+        <li class="step step--lav">
+          <div class="step__num" aria-hidden="true">4.0<small>Record</small></div>
+          <div class="step__body">
+            <h3>Film yourself doing it.</h3>
+            <p>Turn on your webcam and it records each loop while the video plays. The recording stays on your laptop. It never gets uploaded.</p>
+          </div>
+          <div class="step__art" aria-hidden="true">
+            <span class="rec">REC 00:12</span>
+          </div>
+        </li>
+
+        <li class="step step--mint">
+          <div class="step__num" aria-hidden="true">5.0<small>Compare</small></div>
+          <div class="step__body">
+            <h3>Compare, rep by rep.</h3>
+            <p>Watch your take next to the original, synced. Step through each loop separately and spot exactly where you drift off the count.</p>
+          </div>
+          <div class="step__art" aria-hidden="true">
+            <div class="compare">
+              <div>Video</div><div>You</div>
+              <span class="compare__tabs"><span>Loop 1</span><span class="is-on">Loop 2</span><span>Loop 3</span></span>
+            </div>
+          </div>
+        </li>
+      </ol>
+
+      <p class="aside"><strong>Practising from a video that's already mirrored?</strong> Flip it back with the same button and learn it the way it's performed on stage.</p>
+    </div>
+  </section>
+
+  <section id="pricing" class="band band--coral">
+    <div class="shell price">
+      <div class="price__big" aria-hidden="true">7<span>days free</span></div>
+      <div class="reveal">
+        <h2>Try every feature for a week.</h2>
+        <p class="price__then">Then US$2.99, once. Yours for life.</p>
+        <ul class="price__list">
+          <li>Sign in with Google to start. No card needed.</li>
+          <li>Not a subscription. You won't be charged again.</li>
+          <li>Works on any computer where you sign in.</li>
+          <li>Changed your mind? Full refund within 14 days.</li>
+        </ul>
+        <a class="btn btn--lg js-burst" href="https://chromewebstore.google.com/detail/enepmjpmphiopfeafalokkmohmifldfp" target="_blank" rel="noopener">Start the free week <span class="btn__arrow" aria-hidden="true">→</span></a>
+        <p class="price__legacy">Installed it before accounts existed (version 0.0.1)? Everything stays free for you, forever.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band--mint">
+    <div class="shell promise">
+      <h2 class="reveal">Your practice footage stays on your laptop.</h2>
+      <div>
+        <p>We only keep your Google account ID, email and whether you've paid. No viewing history, no recordings, no card numbers.</p>
+        <p><a href="privacy.html">Read the privacy policy</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="shell footer__row">
+    <a class="wordmark" href="./"><span class="wordmark__mark" aria-hidden="true"></span><span>Dance Practice</span></a>
+    <div class="footer__links">
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms &amp; refunds</a>
+      <a href="mailto:amztb12602@gmail.com">Contact</a>
+    </div>
+    <span class="footer__credit">© 2026 YouTube Dance Practice. Not affiliated with YouTube.</span>
+  </div>
+</footer>
+
+<script src="site.js" defer></script>
+</body>
+</html>

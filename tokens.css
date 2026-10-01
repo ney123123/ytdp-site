@@ -1,0 +1,77 @@
+/* Hallmark · tokens · theme: Hum (playful) · design-system: design.md */
+:root {
+  /* paper + ink (cream, never white; near-black, never black) */
+  --color-paper:   oklch(97% 0.012 95);
+  --color-paper-2: oklch(94% 0.016 95);
+  --color-paper-3: oklch(91% 0.020 95);
+  --color-ink:     oklch(20% 0.012 250);
+  --color-ink-2:   oklch(20% 0.012 250 / 0.72);
+  --color-ink-3:   oklch(20% 0.012 250 / 0.55);
+  --color-rule:    oklch(20% 0.012 250 / 0.16);
+  --color-ink-cast: oklch(20% 0.012 250 / 0.14);
+
+  /* accents — each owns its own surface, never blended */
+  --color-accent:       oklch(86% 0.18 95);   /* pear: primary action, playhead */
+  --color-accent-deep:  oklch(70% 0.17 90);   /* pear button edge */
+  --color-accent-cast:  oklch(76% 0.20 95 / 0.45);
+  --color-accent-2:     oklch(66% 0.18 235);  /* cyan: links, hover tints */
+  --color-accent-2-ink: oklch(45% 0.15 240);  /* cyan readable as text on cream */
+  --color-accent-3:     oklch(68% 0.24 18);   /* coral: the loop, one big moment */
+  --color-accent-3-deep:oklch(52% 0.20 22);
+  --color-mint:         oklch(80% 0.16 150);
+  --color-lavender:     oklch(74% 0.16 305);
+
+  /* tints for bands (accent at low alpha over paper) */
+  --tint-pear:  oklch(86% 0.18 95 / 0.22);
+  --tint-cyan:  oklch(66% 0.18 235 / 0.10);
+  --tint-coral: oklch(68% 0.24 18 / 0.10);
+  --tint-mint:  oklch(80% 0.16 150 / 0.18);
+  --tint-lav:   oklch(74% 0.16 305 / 0.14);
+
+  --color-focus: oklch(45% 0.15 240);
+  --shadow-contact: 0 1px 2px oklch(20% 0.012 250 / 0.10);
+  --shadow-ambient: 0 14px 34px -18px oklch(20% 0.012 250 / 0.22);
+
+  /* type */
+  --font-display: "Plus Jakarta Sans", "Geist", ui-rounded, system-ui, sans-serif;
+  --font-body:    "Plus Jakarta Sans", "Geist", ui-rounded, system-ui, sans-serif;
+  --font-label:   "DM Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  --text-xs:  0.75rem;
+  --text-sm:  0.875rem;
+  --text-md:  1.0625rem;
+  --text-lg:  1.25rem;
+  --text-xl:  1.625rem;
+  --text-2xl: clamp(1.75rem, 2.2vw + 1rem, 2.5rem);
+  --text-display-s: clamp(2.25rem, 4.2vw + 1rem, 4rem);
+  --text-display:   clamp(2.6rem, 6vw + 1rem, 5.6rem);
+  --text-stage:     clamp(3.5rem, 5vw + 1.5rem, 5.75rem);
+
+  /* space — 4pt named scale */
+  --space-3xs: 0.25rem; --space-2xs: 0.5rem; --space-xs: 0.75rem;
+  --space-sm: 1rem;     --space-md: 1.5rem;  --space-lg: 2rem;
+  --space-xl: 3rem;     --space-2xl: 4.5rem; --space-3xl: 7rem;
+
+  --page-max: 72rem;
+  --doc-max: 44rem;
+  --page-gutter: clamp(1rem, 4vw, 2.5rem);
+
+  /* shape */
+  --radius-card: 22px;
+  --radius-pill: 999px;
+  --radius-input: 12px;
+  --radius-chip: 10px;
+  --rule-dash: 2px dashed oklch(20% 0.012 250 / 0.18);
+
+  /* motion */
+  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in:     cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-press:  cubic-bezier(0.2, 0.7, 0.3, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-snap:   cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-press: 70ms;
+  --dur-short: 140ms;
+  --dur-mid:   220ms;
+  --dur-long:  600ms;
+}
